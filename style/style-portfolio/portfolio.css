@@ -1,0 +1,183 @@
+#header {
+  background-color: #F6F6F6;
+  padding: 2% 0; }
+  #header .icon-three-bars {
+    color: #424146;
+    font-size: 2em; }
+
+#header .active-nav {
+  background-color: #FFEA00; }
+#header ul li {
+  margin: 0 10px 10px; }
+  #header ul li:hover {
+    background-color: #FFEA00; }
+  #header ul li a {
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #424146; }
+    #header ul li a:hover {
+      background-color: #FFEA00; }
+
+.indent {
+  padding: 0;
+  margin: 0; }
+
+.section-headline {
+  width: 100%;
+  background: url("../../img/img-portfolio/slider-bg.webp") no-repeat center/cover;
+  padding: 5% 0; }
+  .section-headline h2 .headline {
+    font-size: 0.7em;
+    color: #FFEA00;
+    background-color: #424146;
+    padding: 15px 100px 15px 15px; }
+
+.portfolio {
+  background-color: #F6F6F6;
+  padding: 4% 0; }
+  .portfolio .portfolio-headline {
+    font-size: 1em;
+    font-weight: 600;
+    color: #424146;
+    line-height: 0.6; }
+  .portfolio .portfolio-title {
+    font-size: 1em;
+    color: #424146;
+    padding-top: 10px; }
+
+#footer {
+  background-color: #424146; }
+  #footer .footer-headline {
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 1.7;
+    padding-bottom: 10px; }
+  #footer .footer-text {
+    font-size: 0.7em;
+    color: #FFF;
+    line-height: 1.7; }
+  #footer .footer-btn {
+    width: 80%;
+    color: #FFF;
+    background-color: #000;
+    border-bottom: 2px solid #FFEA00;
+    padding: 5px 10px;
+    margin-bottom: 30px; }
+  #footer .photo-stream {
+    padding: 1%; }
+  #footer .footer-center {
+    overflow: hidden; }
+  #footer ul .twitter-list:before {
+    content: "";
+    background-image: url("../../img/twitter-con.webp");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer ul .twitter-list .twitter-link {
+    color: #FFEA00;
+    font-weight: bold; }
+  #footer ul .twitter-list .days-ago {
+    color: #FFEA00;
+    font-weight: bold;
+    font-size: 0.3em; }
+  #footer .icon-style {
+    color: #FFF;
+    padding: 5px;
+    background-color: #000;
+    margin-right: 2px; }
+    #footer .icon-style:hover {
+      filter: invert(0.8); }
+  #footer .address-list:before {
+    content: "";
+    background-image: url("../../img/adress.webp");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer .phone-list:before {
+    content: "";
+    background-image: url("../../img/phone.webp");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer .mail-list:before {
+    content: "";
+    background-image: url("../../img/email.webp");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-right: 40px;
+    margin-top: 10px; }
+  #footer .mail-link {
+    color: #FFEA00;
+    font-weight: bold; }
+  #footer .form-style {
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid #FFEA00;
+    background-color: #424146; }
+  #footer .input-content {
+    width: 235px;
+    position: relative; }
+    #footer .input-content:after {
+      content: "";
+      background-image: url("../../img/email.webp");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      display: block;
+      padding-right: 40px;
+      margin-top: 10px;
+      position: absolute;
+      right: -10px;
+      top: -15px; }
+  #footer .footer-menu {
+    background-color: #000;
+    padding: 10px 0; }
+    #footer .footer-menu .footer-menu-title {
+      font-size: 0.7em;
+      color: #FFF;
+      line-height: 1.7; }
+      #footer .footer-menu .footer-menu-title a {
+        color: #FFF; }
+    #footer .footer-menu .footer-nav {
+      padding: 5% 0; }
+      #footer .footer-menu .footer-nav a {
+        color: #FFF;
+        font-size: 0.7em; }
+        #footer .footer-menu .footer-nav a:hover {
+          color: #FFEA00; }
+
+@media (min-width: 768px) {
+  #header ul a {
+    padding: 25px 9px; }
+
+  .section-headline {
+    padding: 2% 0; }
+    .section-headline h2 .headline {
+      font-size: 1em; }
+
+  #footer .middle {
+    line-height: 1; }
+  #footer .footer-text {
+    font-size: 0.5em; }
+  #footer .days-ago {
+    font-size: 0.3em; } }
+@media (min-width: 992px) {
+  #footer .footer-text {
+    font-size: 0.7em; }
+  #footer .middle {
+    line-height: 1.7; } }
+
+/*# sourceMappingURL=portfolio.css.map */
