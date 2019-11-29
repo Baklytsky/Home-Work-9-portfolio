@@ -50,16 +50,55 @@
     padding: 15px 100px 15px 15px;
   }
 }
-.portfolio {
+#portfolio {
   background-color: $cream;
   padding: 4% 0;
+
+  .hide {
+    display: none;
+  }
+
   .portfolio-headline {
     @include dev-headline;
   }
+
   .portfolio-title {
     @include dev-title;
   }
-}
+
+  #filters {
+    .button {
+      font: inherit;
+      font-size: $smaller;
+      font-weight: 600;
+      color: $color;
+      border: none;
+      background-color: transparent;
+      &:active,&:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+
+    .is-checked {
+      background-color: $yellow;
+      border: none;
+    }
+  }
+
+    .portfolio-list {
+      padding: 5% 0;
+
+      .portfolio-item {
+        padding: 1%;
+        border: none;
+      }
+    }
+  }
+
 
 
 #footer {

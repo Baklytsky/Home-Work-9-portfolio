@@ -33,18 +33,39 @@
     background-color: #424146;
     padding: 15px 100px 15px 15px; }
 
-.portfolio {
+#portfolio {
   background-color: #F6F6F6;
   padding: 4% 0; }
-  .portfolio .portfolio-headline {
+  #portfolio .hide {
+    display: none; }
+  #portfolio .portfolio-headline {
     font-size: 1em;
     font-weight: 600;
     color: #424146;
     line-height: 0.6; }
-  .portfolio .portfolio-title {
+  #portfolio .portfolio-title {
     font-size: 1em;
     color: #424146;
     padding-top: 10px; }
+  #portfolio #filters .button {
+    font: inherit;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #424146;
+    border: none;
+    background-color: transparent; }
+    #portfolio #filters .button:active, #portfolio #filters .button:focus {
+      outline: none; }
+    #portfolio #filters .button:hover {
+      background-color: #FFEA00; }
+  #portfolio #filters .is-checked {
+    background-color: #FFEA00;
+    border: none; }
+  #portfolio .portfolio-list {
+    padding: 5% 0; }
+    #portfolio .portfolio-list .portfolio-item {
+      padding: 1%;
+      border: none; }
 
 #footer {
   background-color: #424146; }
