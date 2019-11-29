@@ -47,25 +47,56 @@
     font-size: 1em;
     color: #424146;
     padding-top: 10px; }
-  #portfolio #filters .button {
-    font: inherit;
+  #portfolio #filters .btn-filter {
     font-size: 0.7em;
     font-weight: 600;
     color: #424146;
     border: none;
-    background-color: transparent; }
-    #portfolio #filters .button:active, #portfolio #filters .button:focus {
+    background-color: transparent;
+    padding: 2px 4px;
+    margin: 1px; }
+    #portfolio #filters .btn-filter:active, #portfolio #filters .btn-filter:focus {
       outline: none; }
-    #portfolio #filters .button:hover {
+    #portfolio #filters .btn-filter:hover {
       background-color: #FFEA00; }
   #portfolio #filters .is-checked {
     background-color: #FFEA00;
     border: none; }
-  #portfolio .portfolio-list {
-    padding: 5% 0; }
-    #portfolio .portfolio-list .portfolio-item {
-      padding: 1%;
-      border: none; }
+
+.portfolio-list {
+  padding: 3% 0; }
+  .portfolio-list .portfolio-item {
+    padding: 10px;
+    border: none; }
+    .portfolio-list .portfolio-item .photo {
+      width: 100%; }
+    .portfolio-list .portfolio-item .portfolio-layer {
+      margin: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #FFEA00;
+      -webkit-transition: 0.8s linear;
+      -o-transition: 0.8s linear;
+      transition: 0.8s linear;
+      opacity: 0; }
+      .portfolio-list .portfolio-item .portfolio-layer .arrow {
+        width: 50%; }
+        .portfolio-list .portfolio-item .portfolio-layer .arrow .icon-arrow {
+          font-size: 2em;
+          color: #FFF;
+          background-color: #424146;
+          padding: 30px;
+          -webkit-transition: 0.8s linear;
+          -o-transition: 0.8s linear;
+          transition: 0.8s linear;
+          opacity: 0; }
+      .portfolio-list .portfolio-item .portfolio-layer:hover .icon-arrow {
+        opacity: 1; }
+    .portfolio-list .portfolio-item:hover .portfolio-layer {
+      opacity: 0.7; }
 
 #footer {
   background-color: #424146; }
@@ -188,6 +219,10 @@
     padding: 2% 0; }
     .section-headline h2 .headline {
       font-size: 1em; }
+
+  #portfolio #filters .btn-filter {
+    font-size: 1em;
+    margin: 5px; }
 
   #footer .middle {
     line-height: 1; }
