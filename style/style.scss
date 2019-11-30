@@ -82,6 +82,7 @@
     overflow: hidden;
 
     &:hover {
+      -webkit-filter: invert(0.8);
       filter: invert(0.8);
     }
   }
@@ -278,6 +279,7 @@
   }
   a {
     &:hover {
+      -webkit-filter: invert(0.8);
       filter: invert(0.8);
     }
   }
@@ -322,6 +324,7 @@
     @include icon-style;
 
     &:hover {
+      -webkit-filter: invert(0.8);
       filter: invert(0.8);
     }
   }
@@ -353,16 +356,18 @@
   .form-style {
     @include form-style;
   }
-  .input-content {
-    width: 235px;
-    position: relative;
-    &:after {
-      content: "";
-      background-image: url("../img/email.webp");
-      @include list-icon;
-      position: absolute;
-      right: -10px;
-      top: -15px;
+  .follow-btn {
+    border: none;
+    background-color: $black;
+    padding: 0;
+    &:active, &:focus {
+      outline: none;
+    }
+    .icon-input {
+      font-size: 1.2em;
+      color: $white;
+      padding: 5px 5px 0 5px;
+      background-color: $black;
     }
   }
   .footer-menu {
@@ -437,25 +442,25 @@
     }
   }
   #work {
-  .grid {
-    padding: 5% 0 10%;
-    .grid-sizer {
-      width: 5%;
-    }
-    .gutter-sizer {
-      width: 0;
-    }
-    .grid-item img {
-      width: 100%;
-    }
-    .grid-item--width1 {
-      width: 30%;
-    }
-    .grid-item--width2{
-      width: 20%;
-    }
-    .grid-item--width3{
-      width: 15%;
+    .grid {
+      padding: 5% 0 10%;
+      .grid-sizer {
+        width: 5%;
+      }
+      .gutter-sizer {
+        width: 0;
+      }
+      .grid-item img {
+        width: 100%;
+      }
+      .grid-item--width1 {
+        width: 30%;
+      }
+      .grid-item--width2{
+        width: 20%;
+      }
+      .grid-item--width3{
+        width: 15%;
       }
     }
   }
@@ -526,15 +531,15 @@
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
       transform: translateX(0);
-      }
+    }
   }
   #clients {
-  .control-type-mini {
-    width: 3%;
-    height: 80%;
-    top: 10%;
-    .size-mini {
-      font-size: 2em;
+    .control-type-mini {
+      width: 3%;
+      height: 80%;
+      top: 10%;
+      .size-mini {
+        font-size: 2em;
       }
     }
   }
@@ -623,3 +628,4 @@
     }
   }
 }
+
