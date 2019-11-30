@@ -3,11 +3,10 @@
 //----------------------------------------------------------------------------------*/
 @font-face {
     font-family: 'Century Gothic';
-    src: url('../fonts/Century Gothic.ttf');
-    src: local('Century Gothic'), local('Century Gothic');
+    src: url("../fonts/CenturyGothic.eot");
+    src: url("../fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.ttf") format("truetype");
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal; }
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:16px Century Gothic, Calibri, arial, Tahoma, sans-serif;  color:#424146; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
