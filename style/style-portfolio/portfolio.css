@@ -85,18 +85,18 @@
       transition: 0.8s linear;
       opacity: 0; }
       .portfolio-list .portfolio-item .portfolio-layer .arrow {
-        width: 50%; }
+        width: 50%;
+        -webkit-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+        opacity: 0.7; }
+        .portfolio-list .portfolio-item .portfolio-layer .arrow:hover {
+          opacity: 1; }
         .portfolio-list .portfolio-item .portfolio-layer .arrow .icon-arrow {
           font-size: 2em;
           color: #FFF;
           background-color: #424146;
-          padding: 30px;
-          -webkit-transition: 0.8s linear;
-          -o-transition: 0.8s linear;
-          transition: 0.8s linear;
-          opacity: 0; }
-      .portfolio-list .portfolio-item .portfolio-layer:hover .icon-arrow {
-        opacity: 1; }
+          padding: 30px; }
     .portfolio-list .portfolio-item:hover .portfolio-layer {
       opacity: 0.7; }
 
@@ -145,6 +145,7 @@
     background-color: #000;
     margin-right: 2px; }
     #footer .icon-style:hover {
+      -webkit-filter: invert(0.8);
       filter: invert(0.8); }
   #footer .address-list:before {
     content: "";
@@ -181,21 +182,17 @@
     border: none;
     border-bottom: 2px solid #FFEA00;
     background-color: #424146; }
-  #footer .input-content {
-    width: 235px;
-    position: relative; }
-    #footer .input-content:after {
-      content: "";
-      background-image: url("../../img/email.webp");
-      background-repeat: no-repeat;
-      width: 30px;
-      height: 30px;
-      display: block;
-      padding-right: 40px;
-      margin-top: 10px;
-      position: absolute;
-      right: -10px;
-      top: -15px; }
+  #footer .follow-btn {
+    border: none;
+    background-color: #000;
+    padding: 0; }
+    #footer .follow-btn:active, #footer .follow-btn:focus {
+      outline: none; }
+    #footer .follow-btn .icon-input {
+      font-size: 1.2em;
+      color: #FFF;
+      padding: 5px 5px 0 5px;
+      background-color: #000; }
   #footer .footer-menu {
     background-color: #000;
     padding: 10px 0; }
