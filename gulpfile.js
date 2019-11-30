@@ -5,7 +5,7 @@ var gulp         = require('gulp'),
 
 
 gulp.task('styles', function () {
-    return gulp.src('./assets/scss/**/*.scss')
+    return gulp.src('./style/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 3 versions'], cascade: false}))
         .pipe(cleancss())
@@ -13,7 +13,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('assets/scss/**/*.scss', gulp.parallel('styles'));
+    gulp.watch('style/scss/**/*.scss', gulp.parallel('styles'));
 });
 
 gulp.task('default',  gulp.parallel('styles', 'watch'));

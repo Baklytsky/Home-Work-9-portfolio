@@ -11,6 +11,11 @@
 }
 
 #header {
+  .navbar-toggler {
+    &:active, &:focus {
+      outline: none;
+    }
+  }
   .active-nav {
     background-color: $yellow;
   }
@@ -260,10 +265,16 @@
   }
 
   #portfolio {
+    .portfolio-headline {
+      font-size: $big;
+    }
+    .portfolio-title {
+      font-size: $normal;
+    }
     #filters {
     .btn-filter {
       font-size: $small;
-      margin: 5px;
+      margin: 10px;
       }
     }
   }

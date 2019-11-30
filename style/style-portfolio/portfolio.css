@@ -5,6 +5,8 @@
     color: #424146;
     font-size: 2em; }
 
+#header .navbar-toggler:active, #header .navbar-toggler:focus {
+  outline: none; }
 #header .active-nav {
   background-color: #FFEA00; }
 #header ul li {
@@ -220,9 +222,13 @@
     .section-headline h2 .headline {
       font-size: 1em; }
 
+  #portfolio .portfolio-headline {
+    font-size: 1.5em; }
+  #portfolio .portfolio-title {
+    font-size: 1.2em; }
   #portfolio #filters .btn-filter {
     font-size: 1em;
-    margin: 5px; }
+    margin: 10px; }
 
   #footer .middle {
     line-height: 1; }
