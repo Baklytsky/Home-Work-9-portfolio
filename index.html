@@ -9,6 +9,7 @@
     <title>Skokov</title>
 </head>
 <body>
+    <!-- А где же хоть один h1 -->
     <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
@@ -54,7 +55,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <img src="img/photo.webp" alt="Photos" class="img-fluid card-img pb-5">
+                                    <img src="img/photo.webp" alt="Photos" class="img-fluid card-img pb-5"><!-- webp не будет читаться в ИЕ -->
                                 </div>
                             </div>
                         </div>
@@ -92,17 +93,17 @@
     </section>
     <section id="development">
         <div class="container">
-        <div class="row indent">
+        <div class="row indent"><!-- Форматирование -->
             <div class="col-12 text-center pt-3">
                 <h2 class="text-uppercase dev-headline">We create quality designs.</h2>
-                <p class="dev-title pt-3">We specialize in Web Design / Development and Graphic Design</p>
+                <p class="dev-title pt-3">We specialize in Web Design / Development and Graphic Design</p><!-- Нейминг классов. Почему дев? если тайтл то почему в теге параграфа -->
             </div>
         </div>
         <ul class="row pt-3 indent">
             <li class="mx-auto web-item motion-item pt-3 col-10 col-sm-5 col-lg-3">
                 <div class="card">
                     <div class="text-center layer-one">
-                        <span class="icon-users icon-dev"></span>
+                        <span class="icon-users icon-dev"></span><!-- aria-label -->
                         <h3 class="icon-title text-uppercase">Team</h3>
                         <div class="layer-two">
                             <img src="img/bottle.webp" alt="Bottle" class="img-fluid card-img">
@@ -225,7 +226,7 @@
     </section>
     <section id="clients" class="container-fluid indent">
         <div class="d-flex justify-content-center align-item-center">
-            <h2 class="clients-headline mx-auto text-uppercase"><span>Our clients</span></h2>
+            <h2 class="clients-headline mx-auto text-uppercase"><span>Our clients</span></h2><!-- А без спана никак? -->
         </div>
         <div class="row text-center pt-5 pb-3 mx-auto">
             <p class="col-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -284,10 +285,10 @@
             </a>
         </div>
     </section>
-    <section id="footer">
+    <section id="footer"><!-- для футера есть тег footer -->
         <div class="container">
-            <div class="row pt-4 pb-4">
-                <div class="col-12 text-center col-md-4 col-lg-4">
+            <div class="row pt-4 pb-4"><!-- py-4 вместо отдельно верха и низа -->
+                <div class="col-12 text-center col-md-4 col-lg-4"><!-- Колонку пишем меньшую по размеру при одинаковых столбцах -->
                     <h3 class="footer-headline">About Us</h3>
                     <p class="footer-text pb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                         sed diam nonummy nibh euismod tincidunt ut
@@ -337,7 +338,7 @@
                             <div>
                             <p class="footer-text middle">
                                 <span class="d-block">Check Out Dtbaker's <a class="twitter-link" href="#">@Arduino</a> Sales Notification <a class="twitter-link" href="#"> #System</a></span>
-                                <span class="d-block">http://t.co/ WBFKIWHJ</span>
+                                <span class="d-block">http://t.co/ WBFKIWHJ</span><!-- Ну это же ссылка -->
                             </p>
                             <p class="days-ago footer-text">3 days ago</p>
                             </div>
@@ -475,6 +476,6 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js"></script><!-- Отложеная загрузка скриптов -->
 </body>
 </html>
