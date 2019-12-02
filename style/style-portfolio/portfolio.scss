@@ -130,7 +130,7 @@
         }
 
         .icon-arrow {
-          font-size: 2em;
+          font-size: 2em; /*В переменные*/
           color: $white;
           background-color: $color;
           padding: 30px;
@@ -197,7 +197,7 @@
   .phone-list {
     &:before {
       content: "";
-      background-image: url("../../img/phone.webp");
+      background-image: url("../../img/phone.webp");/*Как у тебя тут картинка называется а как по факту?*/
       @include list-icon;
     }
   }
